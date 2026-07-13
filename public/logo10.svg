@@ -1,0 +1,12 @@
+<svg width="100%" viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" role="img" style="">
+<title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">ChatApp cutout wordmark</title>
+<desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">A bright light blue text-only logo reading "ChatApp" in bold sans-serif with a diagonal cutout slicing through the letters, tightly cropped.</desc>
+<defs>
+<mask id="cutoutMask">
+<rect x="0" y="0" width="460" height="150" fill="#ffffff"/>
+<polygon points="0,80 460,45 460,60 0,95" fill="#000000"/>
+</mask>
+</defs>
+
+<text x="230" y="100" font-family="Arial, sans-serif" font-size="80" font-weight="800" text-anchor="middle" fill="#38bdf8" letter-spacing="-1" mask="url(#cutoutMask)" style="fill:rgb(56, 189, 248);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:80px;font-weight:800;text-anchor:middle;dominant-baseline:auto">ChatApp</text>
+</svg>
