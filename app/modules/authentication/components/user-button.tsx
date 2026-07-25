@@ -1,12 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {
-  LogOut,
-  Settings,
-  CreditCard,
-  User as UserIcon,
-} from "lucide-react";
+import { LogOut, Settings, CreditCard, User as UserIcon } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -18,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { authClient  } from "@/lib/auth-client";
+import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 
 interface UserData {
@@ -30,11 +25,7 @@ interface UserData {
 
 type Size = "sm" | "md" | "lg";
 
-type BadgeVariant =
-  | "default"
-  | "secondary"
-  | "destructive"
-  | "outline";
+type BadgeVariant = "default" | "secondary" | "destructive" | "outline";
 
 interface UserButtonProps {
   user: UserData | null;
@@ -90,7 +81,7 @@ export default function UserButton({
 
   const getUserInitials = (
     name?: string | null,
-    email?: string | null
+    email?: string | null,
   ): string => {
     if (name) {
       return name
@@ -198,30 +189,21 @@ export default function UserButton({
         <DropdownMenuSeparator />
 
         {onProfile && (
-          <DropdownMenuItem
-            onClick={onProfile}
-            className="cursor-pointer"
-          >
+          <DropdownMenuItem onClick={onProfile} className="cursor-pointer">
             <UserIcon className="mr-2 h-4 w-4" />
             Profile
           </DropdownMenuItem>
         )}
 
         {onBilling && (
-          <DropdownMenuItem
-            onClick={onBilling}
-            className="cursor-pointer"
-          >
+          <DropdownMenuItem onClick={onBilling} className="cursor-pointer">
             <CreditCard className="mr-2 h-4 w-4" />
             Billing
           </DropdownMenuItem>
         )}
 
         {onSettings && (
-          <DropdownMenuItem
-            onClick={onSettings}
-            className="cursor-pointer"
-          >
+          <DropdownMenuItem onClick={onSettings} className="cursor-pointer">
             <Settings className="mr-2 h-4 w-4" />
             Settings
           </DropdownMenuItem>
